@@ -35,3 +35,5 @@ jobs:
           local-dir: ./dist/
           protocol: ftps
           port: 21
+          exclude: |
+            images/**
