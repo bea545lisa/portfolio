@@ -1,8 +1,24 @@
 <template>
-  <section class="border-b border-[#30363d] py-20 px-6" style="background: linear-gradient(to bottom, #2d3140, #0d1117)">
-    <div class="max-w-6xl mx-auto">
+  <section class="border-b border-[#30363d] py-20" style="background: linear-gradient(to bottom, #2d3140, #0d1117)">
+    <div class="max-w-6xl mx-auto px-6">
 
-      <div class="flex flex-col md:flex-row md:items-center gap-10">
+      <!-- Terminal-Zeile -->
+      <p class="font-mono text-[#8b949e] text-sm mb-4">
+        <span class="text-[#e879f9]">~/portfolio</span>
+        <span class="text-[#8b949e]"> $ </span>
+        <span class="text-[#e6edf3]">whoami</span>
+      </p>
+
+      <!-- Name + Untertitel -->
+      <h1 class="text-4xl md:text-5xl font-bold text-[#e6edf3] mb-2 tracking-tight">
+        Bea Lisa
+      </h1>
+      <p class="font-mono text-[#e879f9] text-sm tracking-widest uppercase mb-8">
+        Fullstack Web Developer
+      </p>
+
+      <!-- Foto + Bio -->
+      <div class="flex flex-col md:flex-row md:items-start gap-8">
 
         <!-- Foto -->
         <div class="shrink-0">
@@ -13,29 +29,18 @@
 
         <!-- Text -->
         <div class="flex-1">
-
-          <!-- Terminal-Zeile -->
-          <p class="font-mono text-[#8b949e] text-sm mb-4">
-            <span class="text-[#e879f9]">~/portfolio</span>
-            <span class="text-[#8b949e]"> $ </span>
-            <span class="text-[#e6edf3]">whoami</span>
-          </p>
-
-          <h1 class="text-4xl md:text-5xl font-bold text-[#e6edf3] mb-2 tracking-tight">
-            Bea Lisa
-          </h1>
-          <p class="font-mono text-[#e879f9] text-sm tracking-widest uppercase mb-5">
-            Fullstack Web Developer
-          </p>
           <p class="text-[#8b949e] text-base leading-relaxed max-w-4xl">
             Senior Full-Stack Developer mit über 18 Jahren Erfahrung in der Entwicklung komplexer Web- &amp; E-Commerce-Anwendungen. Schwerpunkt auf PHP, Datenbankdesign, Prozessautomatisierung und skalierbaren Webarchitekturen – von der Konzeption bis zum produktiven Betrieb mit CI/CD.
           </p>
           <p class="text-[#8b949e] text-base leading-relaxed max-w-4xl mt-3">
             Aktuell Entwicklung eigener Webanwendungen mit Laravel, Vue.js, React, Shopify und GraphQL sowie Einsatz KI-gestützter Tools zur effizienten Umsetzung moderner Softwarelösungen.
           </p>
+        </div>
 
-          <!-- Tech-Tags -->
-          <div class="flex flex-wrap gap-2 mt-6">
+      </div>
+
+        <!-- Tech-Tags -->
+        <div class="flex flex-wrap gap-2 mt-6">
             <span v-for="tech in techs" :key="tech"
               class="font-mono text-xs px-3 py-1 rounded-md border border-[#30363d] bg-[#161b22] text-[#8b949e] hover:border-[#e879f9]/50 hover:text-[#e879f9] transition cursor-default">
               {{ tech }}
@@ -58,8 +63,6 @@
             </a>
           </div>
 
-        </div>
-      </div>
     </div>
   </section>
 </template>

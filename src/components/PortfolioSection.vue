@@ -1,5 +1,5 @@
 <template>
-  <section id="portfolio" class="py-24 bg-[#0d1117]">
+  <section id="portfolio" class="pt-16 pb-24 bg-[#0d1117]">
     <div class="max-w-6xl mx-auto px-6">
 
       <div class="mb-12">
