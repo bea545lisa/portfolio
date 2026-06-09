@@ -1,26 +1,26 @@
 <template>
-  <section id="portfolio" class="py-24 bg-gray-50">
+  <section id="portfolio" class="py-24 bg-[#0d1117]">
     <div class="max-w-6xl mx-auto px-6">
 
       <div class="mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-[#475569]">Projekte</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#e6edf3] tracking-tight">Projekte</h2>
         <div class="flex items-center gap-4 mt-3">
-          <div class="h-[3px] w-12 bg-[#fb923c]"></div>
-          <p class="text-[#475569]">Ausgewählte Arbeiten</p>
+          <div class="h-[2px] w-12 bg-[#e879f9]"></div>
+          <p class="font-mono text-[#8b949e] text-sm">// ausgewählte Arbeiten</p>
         </div>
       </div>
 
       <!-- Filter -->
-      <div class="flex flex-wrap gap-3 mb-10">
+      <div class="flex flex-wrap gap-2 mb-10">
         <button
           v-for="filter in filters"
           :key="filter.value"
           @click="setFilter(filter.value)"
           :class="[
-            'px-4 py-2 rounded-full text-sm font-mono transition border',
+            'px-4 py-1.5 rounded-md text-xs font-mono transition border',
             activeFilter === filter.value
-              ? 'bg-[#fb923c] text-white border-[#fb923c]'
-              : 'border-[#475569]/30 text-[#475569] hover:border-[#fb923c]/40 hover:text-[#fb923c]'
+              ? 'bg-[#e879f9]/20 text-[#e879f9] border-[#e879f9]/50'
+              : 'border-[#30363d] bg-[#161b22] text-[#8b949e] hover:border-[#e879f9]/30 hover:text-[#e879f9]'
           ]"
         >
           {{ filter.label }}
@@ -37,20 +37,20 @@
         >
           <RouterLink
             :to="`/projekt/${project.slug}`"
-            class="group relative overflow-hidden rounded-xl border border-white/5 hover:border-[#fb923c]/30 transition-colors duration-300 block w-full h-full"
+            class="group relative overflow-hidden rounded-lg border border-[#30363d] hover:border-[#e879f9]/40 transition-colors duration-300 block w-full h-full bg-[#161b22]"
           >
-            <div class="w-full h-full bg-gray-200">
+            <div class="w-full h-full">
               <img
                 :src="project.thumb"
                 :alt="project.title"
                 class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500 opacity-0 group-hover:opacity-100"
-                @load="e => e.target.classList.replace('opacity-0', 'opacity-80')"
+                @load="e => e.target.classList.replace('opacity-0', 'opacity-75')"
               />
             </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0d1117]/90 via-[#0d1117]/20 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4">
               <div>
-                <p class="text-white font-semibold text-sm">{{ project.title }}</p>
-                <p class="text-[#fb923c] text-xs font-mono">{{ project.subtitle }}</p>
+                <p class="text-[#e6edf3] font-semibold text-sm">{{ project.title }}</p>
+                <p class="text-[#e879f9] text-xs font-mono mt-0.5">{{ project.subtitle }}</p>
               </div>
             </div>
           </RouterLink>
@@ -69,7 +69,7 @@ const activeFilter = ref('all');
 const containerRef = ref(null);
 const itemPositions = ref({});
 const containerHeight = ref(0);
-const GAP = 16;
+const GAP = 12;
 
 const filters = [
   { label: 'Alle',      value: 'all',      type: 'category' },
@@ -124,9 +124,7 @@ function calculatePositions() {
   itemPositions.value = newPos;
 }
 
-function setFilter(value) {
-  activeFilter.value = value;
-}
+function setFilter(value) { activeFilter.value = value; }
 
 function itemStyle(project) {
   const pos = itemPositions.value[project.slug];

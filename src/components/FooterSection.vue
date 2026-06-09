@@ -1,12 +1,12 @@
 <template>
-  <footer class="bg-[#585e60] border-t border-white/10 pt-8" style="padding-bottom: max(1.5rem, env(safe-area-inset-bottom))">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-white/50 text-xs font-mono">© {{ year }} Lisa B.</p>
-        <div class="flex gap-4 text-xs font-mono">
-          <a href="https://bealisa.com" target="_blank" class="text-white/50 hover:text-[#fb923c] transition">bealisa.com</a>
-          <a href="https://github.com/bea545lisa" target="_blank" class="text-white/50 hover:text-[#fb923c] transition">GitHub</a>
-        </div>
+  <footer class="bg-[#0d1117] border-t border-[#30363d] py-8 px-6">
+    <div class="max-w-6xl mx-auto flex justify-center items-center">
+      <p class="font-mono text-[#8b949e] text-xs">
+        <span class="text-[#e879f9]">©</span> {{ year }} Bea Lisa
+      </p>
+      <div class="flex gap-6 font-mono text-xs" style="display:none">
+        <a href="https://bealisa.com" target="_blank" class="text-[#8b949e] hover:text-[#e879f9] transition">bealisa.com</a>
+        <a href="https://github.com/bea545lisa" target="_blank" class="text-[#8b949e] hover:text-[#e879f9] transition">github</a>
       </div>
     </div>
   </footer>

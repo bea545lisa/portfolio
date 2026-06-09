@@ -1,5 +1,32 @@
 export const projects = [
   {
+    id: 0,
+    slug: 'rexpetcare',
+    title: 'Rex Petcare',
+    subtitle: 'Haussitting-Website',
+    category: 'web',
+    zeitraum: '2026',
+    url: 'https://rexpetcare.de',
+    beschreibung: 'Live-Website für einen professionellen Haussitting-Dienst im Raum München & Oberland. Konzeption, Design und Umsetzung als mehrsprachige Laravel/React-Anwendung mit öffentlichem Kundenbereich und integriertem Admin-Backend zur Verwaltung von Buchungen und Bewertungen. Automatisiertes Deployment via GitHub Actions auf Demo- und Live-Server.',
+    techs: ['Laravel', 'React', 'Inertia.js', 'Tailwind CSS', 'PHP 8.4', 'MySQL'],
+    features: [
+      'Mehrsprachigkeit DE / EN (pfadbasiert)',
+      'Animierter Fullscreen-Slider',
+      'Angebot & Preisübersicht',
+      'Kundenbewertungen (Marquee)',
+      'Kontakt- und Buchungsformular mit Buchungskalender',
+      'CI/CD mit GitHub Actions (develop → demo, main → live)',
+      'Admin-Backend: Buchungsverwaltung, Kundenkommunikation, Rechnungserstellung als PDF und Versand per E-Mail',
+    ],
+    thumb: '/images/referenzen/thumbnails/thumb-rexpetcare.jpg',
+    images: [
+      '/images/referenzen/rexpetcare/rexpetcare-1.jpg',
+      '/images/referenzen/rexpetcare/rexpetcare-2.jpg',
+      '/images/referenzen/rexpetcare/rexpetcare-3.jpg',
+      '/images/referenzen/rexpetcare/rexpetcare-4.jpg',
+    ],
+  },
+  {
     id: 1,
     slug: 'webwork-relaunch',
     title: '[web]work Relaunch',

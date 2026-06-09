@@ -1,57 +1,69 @@
 <template>
-  <section class="bg-[#585e60] py-20 px-6">
+  <section class="border-b border-[#30363d] py-20 px-6" style="background: linear-gradient(to bottom, #2d3140, #0d1117)">
     <div class="max-w-6xl mx-auto">
 
       <div class="flex flex-col md:flex-row md:items-center gap-10">
 
-        <!-- Foto-Placeholder -->
+        <!-- Foto -->
         <div class="shrink-0">
-          <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#fb923c]/20 border-2 border-[#fb923c]/40 flex items-center justify-center overflow-hidden">
-            <!-- Tausch gegen <img src="/foto.jpg" ...> wenn vorhanden -->
-            <svg class="w-16 h-16 text-[#fb923c]/60" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-            </svg>
+          <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#e879f9]/30 overflow-hidden">
+            <img src="/images/foto.jpg" alt="Bea Lisa" class="w-full h-full object-cover" style="transform: scale(1.15) translateY(4%)" />
           </div>
         </div>
 
         <!-- Text -->
-        <div>
-          <p class="font-mono text-[#fb923c] text-sm tracking-widest uppercase mb-2">[ Über mich ]</p>
-          <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Lisa B.</h1>
-          <p class="text-white/70 text-base leading-relaxed max-w-2xl">
-            Fullstack-Webentwicklerin aus dem Raum München&nbsp;/ Oberland mit über 10 Jahren Erfahrung in der Konzeption und Umsetzung von Webanwendungen, Shops und internen Verwaltungssystemen. Schwerpunkt auf modernen Stacks: Laravel, Vue.js und React.
+        <div class="flex-1">
+
+          <!-- Terminal-Zeile -->
+          <p class="font-mono text-[#8b949e] text-sm mb-4">
+            <span class="text-[#e879f9]">~/portfolio</span>
+            <span class="text-[#8b949e]"> $ </span>
+            <span class="text-[#e6edf3]">whoami</span>
+          </p>
+
+          <h1 class="text-4xl md:text-5xl font-bold text-[#e6edf3] mb-2 tracking-tight">
+            Bea Lisa
+          </h1>
+          <p class="font-mono text-[#e879f9] text-sm tracking-widest uppercase mb-5">
+            Fullstack Web Developer
+          </p>
+          <p class="text-[#8b949e] text-base leading-relaxed max-w-4xl">
+            Senior Full-Stack Developer mit über 18 Jahren Erfahrung in der Entwicklung komplexer Web- &amp; E-Commerce-Anwendungen. Schwerpunkt auf PHP, Datenbankdesign, Prozessautomatisierung und skalierbaren Webarchitekturen – von der Konzeption bis zum produktiven Betrieb mit CI/CD.
+          </p>
+          <p class="text-[#8b949e] text-base leading-relaxed max-w-4xl mt-3">
+            Aktuell Entwicklung eigener Webanwendungen mit Laravel, Vue.js, React, Shopify und GraphQL sowie Einsatz KI-gestützter Tools zur effizienten Umsetzung moderner Softwarelösungen.
           </p>
 
           <!-- Tech-Tags -->
           <div class="flex flex-wrap gap-2 mt-6">
             <span v-for="tech in techs" :key="tech"
-              class="font-mono text-xs px-3 py-1 rounded-full border border-white/20 text-white/60 hover:border-[#fb923c]/50 hover:text-[#fb923c] transition">
+              class="font-mono text-xs px-3 py-1 rounded-md border border-[#30363d] bg-[#161b22] text-[#8b949e] hover:border-[#e879f9]/50 hover:text-[#e879f9] transition cursor-default">
               {{ tech }}
             </span>
           </div>
 
-          <!-- Kontakt-Links -->
-          <div class="flex flex-wrap gap-4 mt-6">
-            <a href="mailto:hallo@bealisa.com"
-              class="font-mono text-sm text-[#fb923c] hover:text-white transition">
-              ✉ hallo@bealisa.com
+          <!-- Links -->
+          <div class="flex flex-wrap gap-6 mt-6">
+            <a href="mailto:bea.rohrmoser@gmail.com"
+              class="font-mono text-sm text-[#e879f9] hover:text-[#f0abfc] transition flex items-center gap-2">
+              <span class="opacity-60">✉</span> Schreib mir
             </a>
             <a href="https://github.com/bea545lisa" target="_blank"
-              class="font-mono text-sm text-white/50 hover:text-[#fb923c] transition">
-              ⌥ GitHub
+              class="font-mono text-sm text-[#8b949e] hover:text-[#e879f9] transition flex items-center gap-2">
+              <span class="opacity-60">⌥</span> GitHub
             </a>
-            <a href="https://bealisa.com" target="_blank"
-              class="font-mono text-sm text-white/50 hover:text-[#fb923c] transition">
-              → bealisa.com
+            <a href="https://bealisa.com" target="_blank" style="display:none"
+              class="font-mono text-sm text-[#8b949e] hover:text-[#e879f9] transition flex items-center gap-2">
+              <span class="opacity-60">→</span> bealisa.com
             </a>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-const techs = ['Laravel', 'Vue.js', 'React', 'PHP 8', 'Tailwind CSS', 'MySQL', 'Vite', 'Node.js'];
+const techs = ['PHP 8', 'Laravel', 'Vue.js', 'React', 'MySQL', 'Tailwind CSS', 'Vite', 'Node.js', 'Shopify', 'GraphQL'];
 </script>
