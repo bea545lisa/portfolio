@@ -1,6 +1,6 @@
 <template>
   <section id="portfolio" class="pt-16 pb-24 bg-[#0d1117]">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-screen-2xl mx-auto px-6">
 
       <div class="mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-[#e6edf3] tracking-tight">Projekte</h2>
@@ -17,7 +17,7 @@
           :key="filter.value"
           @click="setFilter(filter.value)"
           :class="[
-            'px-4 py-1.5 rounded-md text-xs font-mono transition border',
+            'px-3 py-1 rounded-md text-xs font-mono transition border',
             activeFilter === filter.value
               ? 'bg-[#e879f9]/20 text-[#e879f9] border-[#e879f9]/50'
               : 'border-[#30363d] bg-[#161b22] text-[#8b949e] hover:border-[#e879f9]/30 hover:text-[#e879f9]'
@@ -88,6 +88,8 @@ const filters = [
 
 function getColumns() {
   const w = window.innerWidth;
+  if (w >= 1536) return 6;
+  if (w >= 1280) return 5;
   if (w >= 1024) return 4;
   if (w >= 768)  return 3;
   return 2;

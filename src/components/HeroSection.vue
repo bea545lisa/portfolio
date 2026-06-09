@@ -1,6 +1,6 @@
 <template>
   <section class="border-b border-[#30363d] py-20" style="background: linear-gradient(to bottom, #2d3140, #0d1117)">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-screen-2xl mx-auto px-6">
 
       <!-- Terminal-Zeile -->
       <p class="font-mono text-[#8b949e] text-sm mb-4">
@@ -10,29 +10,29 @@
       </p>
 
       <!-- Name + Untertitel -->
-      <h1 class="text-4xl md:text-5xl font-bold text-[#e6edf3] mb-2 tracking-tight">
+      <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold text-[#e6edf3] mb-2 tracking-tight">
         Bea Lisa
       </h1>
-      <p class="font-mono text-[#e879f9] text-sm tracking-widest uppercase mb-8">
+      <p class="font-mono tracking-widest uppercase mb-8 text-[#e879f9]" style="font-size: clamp(0.875rem, 1vw, 1.05rem)">
         Fullstack Web Developer
       </p>
 
       <!-- Foto + Bio -->
-      <div class="flex flex-col md:flex-row md:items-start gap-8">
+      <div class="flex flex-col md:flex-row md:items-center gap-12 xl:gap-16">
 
         <!-- Foto -->
         <div class="shrink-0">
-          <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#e879f9]/30 overflow-hidden">
+          <div class="w-40 h-40 md:w-56 md:h-56 xl:w-64 xl:h-64 rounded-full border-2 border-[#e879f9]/30 overflow-hidden">
             <img :src="'/images/foto.jpg'" alt="Bea Lisa" class="w-full h-full object-cover" style="transform: scale(1.15) translateY(4%)" />
           </div>
         </div>
 
         <!-- Text -->
-        <div class="flex-1">
-          <p class="text-[#8b949e] text-base leading-relaxed max-w-4xl">
+        <div class="flex-1 px-8">
+          <p class="text-[#8b949e] text-base xl:text-lg leading-relaxed max-w-none">
             Senior Full-Stack Developer mit über 18 Jahren Erfahrung in der Entwicklung komplexer Web- &amp; E-Commerce-Anwendungen. Schwerpunkt auf PHP, Datenbankdesign, Prozessautomatisierung und skalierbaren Webarchitekturen – von der Konzeption bis zum produktiven Betrieb mit CI/CD.
           </p>
-          <p class="text-[#8b949e] text-base leading-relaxed max-w-4xl mt-3">
+          <p class="text-[#8b949e] text-base xl:text-lg leading-relaxed max-w-none mt-3">
             Aktuell Entwicklung eigener Webanwendungen mit Laravel, Vue.js, React, Shopify und GraphQL sowie Einsatz KI-gestützter Tools zur effizienten Umsetzung moderner Softwarelösungen.
           </p>
         </div>
