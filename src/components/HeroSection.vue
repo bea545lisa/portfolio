@@ -7,7 +7,7 @@
         <!-- Foto -->
         <div class="shrink-0">
           <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-[#e879f9]/30 overflow-hidden">
-            <img src="/images/foto.jpg" alt="Bea Lisa" class="w-full h-full object-cover" style="transform: scale(1.15) translateY(4%)" />
+            <img :src="'/images/foto.jpg'" alt="Bea Lisa" class="w-full h-full object-cover" style="transform: scale(1.15) translateY(4%)" />
           </div>
         </div>
 
