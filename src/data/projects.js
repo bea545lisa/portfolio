@@ -1,12 +1,12 @@
 export const projects = [
   {
     id: 0,
-    slug: 'rexpetcare',
-    title: 'Rex Petcare',
+    slug: 'ramirex',
+    title: 'Ramirex Pet Care',
     subtitle: 'Haussitting-Website',
     category: 'web',
     zeitraum: '2026',
-    url: 'https://rexpetcare.de',
+    url: 'https://ramirex.de',
     beschreibung: 'Live-Website für einen professionellen Haussitting-Dienst im Raum München & Oberland. Konzeption, Design und Umsetzung als mehrsprachige Laravel/React-Anwendung mit öffentlichem Kundenbereich und integriertem Admin-Backend zur Verwaltung von Buchungen und Bewertungen. Automatisiertes Deployment via GitHub Actions auf Demo- und Live-Server.',
     techs: ['Laravel', 'React', 'Inertia.js', 'Tailwind CSS', 'PHP 8.4', 'MySQL'],
     features: [
