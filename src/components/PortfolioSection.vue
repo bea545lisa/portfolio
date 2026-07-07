@@ -73,8 +73,8 @@ const GAP = 12;
 
 const filters = [
   { label: 'Alle',      value: 'all',      type: 'category' },
-  { label: 'Web',       value: 'web',      type: 'category' },
   { label: 'App',       value: 'app',      type: 'category' },
+  { label: 'Webseite',       value: 'web',      type: 'category' },
   { label: 'Shop',      value: 'shop',     type: 'category' },
   { label: 'Admin',     value: 'admin',    type: 'category' },
   { label: 'React',     value: 'React',    type: 'tech' },
