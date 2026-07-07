@@ -1,5 +1,31 @@
 export const projects = [
   {
+    id: 19,
+    slug: 'handwerk-basic',
+    title: 'Handwerk Spezial',
+    subtitle: 'Onepage-Vorlage für Handwerksbetriebe',
+    category: 'web',
+    zeitraum: '2026',
+    url: 'https://handwerk-basic.webwork-oberland.de',
+    beschreibung: 'Individualisierbare Onepage-Website als Produktlinie für Handwerksbetriebe. Die Demo mit der fiktiven Schreinerei Aigner zeigt Branding in Kundenfarben, Leistungsübersicht und ein integriertes Schnellbewerbungsformular gegen den Fachkräftemangel. Inhalte und Branding sind datengetrieben und CMS-ready für schnelle Kundenanpassung.',
+    techs: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    features: [
+      'Individuelles Branding über zentrale Content-Datei',
+      'Schnellbewerbungs-Formular für die Mitarbeitersuche',
+      'Konfigurierbare Sektionen (Produktlinie Basic/Pro)',
+      'Statischer Export, automatisches Deployment via GitHub Actions',
+    ],
+    thumb: '/images/referenzen/thumbnails/thumb-handwerk.jpg',
+    images: [
+      '/images/referenzen/handwerk/handwerk-angebot.jpg',
+      '/images/referenzen/handwerk/handwerk-banner-basic.jpg',
+      '/images/referenzen/handwerk/handwerk-banner-premium.jpg',
+      '/images/referenzen/handwerk/handwerk-bewerbung.jpg',
+      '/images/referenzen/handwerk/handwerk-kontakt.jpg',
+      '/images/referenzen/handwerk/handwerk-referenzen.jpg',
+    ],
+  },
+  {
     id: 0,
     slug: 'ramirex',
     title: 'Ramirex Pet Care',
