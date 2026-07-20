@@ -55,8 +55,8 @@ export const projects = [
   {
     id: 1,
     slug: 'webwork-relaunch',
-    title: '[web]work Relaunch',
-    subtitle: 'PHP, Laravel · Vue.js · Tailwind',
+    title: '[web]work',
+    subtitle: 'Relaunch einer Agentur-Webseite',
     category: 'web',
     zeitraum: '2026',
     url: 'www.webwork-oberland.de',

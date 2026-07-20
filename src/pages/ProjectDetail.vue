@@ -12,15 +12,15 @@
           </button>
           <h1 class="text-4xl md:text-5xl font-bold text-[#e6edf3] tracking-tight">{{ project.title }}</h1>
         </div>
-        <span class="font-mono text-[#e879f9] text-xs tracking-widest uppercase ml-12">{{ project.subtitle }}</span>
-        <div class="flex flex-wrap gap-6 text-sm text-[#8b949e] font-mono mt-3 ml-12">
+        <span class="font-mono text-[#e879f9] text-xs tracking-widest uppercase ml-[47px]">{{ project.subtitle }}</span>
+        <div class="flex flex-wrap gap-6 text-sm text-[#8b949e] font-mono mt-3 ml-[47px]">
           <span v-if="project.zeitraum">// {{ project.zeitraum }}</span>
           <a v-if="project.url" :href="project.url" target="_blank"
             class="text-[#e879f9] hover:text-[#f0abfc] transition">
             → {{ project.url.includes('github.com') ? 'Git Repo' : 'Website ansehen' }}
           </a>
         </div>
-        <div class="h-[2px] w-16 bg-[#e879f9] mt-6 ml-12"></div>
+        <div class="h-[2px] w-16 bg-[#e879f9] mt-6 ml-[47px]"></div>
       </div>
 
       <!-- 2-Spalten Layout -->
