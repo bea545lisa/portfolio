@@ -33,7 +33,7 @@
           <div v-if="project.features?.length">
             <h2 class="font-mono text-xs text-[#e879f9] uppercase tracking-widest mb-3">/* Features */</h2>
             <ul class="space-y-2">
-              <li v-for="f in project.features" :key="f" class="flex items-start gap-3 text-[#8b949e] text-sm">
+              <li v-for="f in project.features" :key="f" class="flex items-start gap-3 text-[#8b949e]">
                 <span class="text-[#e879f9] font-mono shrink-0">→</span>
                 {{ f }}
               </li>
