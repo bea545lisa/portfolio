@@ -11,6 +11,7 @@ export const projects = [
     techs: ['Shopify', 'Liquid', 'JavaScript', 'HTML5 Canvas API', 'CSS', 'GitHub Actions'],
     features: [
       'Interaktiver Geschirr-Konfigurator mit Live-Vorschau per Canvas-Compositing (Polsterung, Gurtband, Schnallen, Metall-Optionen und Label frei kombinierbar), inkl. Export als PNG',
+      'Alle Foto-/Bildmasken für den Konfigurator in Photoshop selbst erstellt: einzelne Ebenen-Masken pro Bauteil (Polsterung, Gurt, Schnallen, Metall, Label) sowie ein Shading-/Struktur-Overlay für realistische Licht- und Materialwirkung beim Zusammensetzen der Farben',
       'Scroll-gebundenes „Sticky Preview"-Feature: Produktbild schrumpft synchron zur Scrollposition, Titel/Preis blenden weich aus und werden durch eine kompakte Mini-Ansicht ersetzt',
       'Variantenauswahl (Farbe, Größe) ohne Seitensprung, inkl. dynamischem Bildwechsel passend zur gewählten Variante',
       'Bild-Zoom mit Vollbild-Vorschau, separat für Maus (Hover) und Touch optimiert',
