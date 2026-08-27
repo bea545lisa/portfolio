@@ -77,6 +77,7 @@ const filters = [
   { label: 'Webseite',       value: 'web',      type: 'category' },
   { label: 'Shop',      value: 'shop',     type: 'category' },
   { label: 'Admin',     value: 'admin',    type: 'category' },
+  { label: 'Shopify',   value: 'Shopify',  type: 'tech' },
   { label: 'React',     value: 'React',    type: 'tech' },
   { label: 'Vue.js',    value: 'Vue',      type: 'tech' },
   { label: 'Laravel',   value: 'Laravel',  type: 'tech' },
